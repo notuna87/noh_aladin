@@ -9,7 +9,7 @@
         bookTitles.forEach(function (title) {
             $.ajax({
                 method: "GET", // GET 방식으로 요청
-                url: "https://dapi.kakao.com/v3/search/book?target=title", // 제목 기준 검색
+                url: "https://dapi.kakao.com/v3/search/book", // 제목 기준 검색
                 data: $.param({ query: title, size: 1 }), // 검색어, size=1로 한 권만 가져옴
                 headers: {
                     Authorization: "KakaoAK e094a363d6e629209211bd379bb0e21b" // 내 카카오 REST API 키
